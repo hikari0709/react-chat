@@ -1,7 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import SignUp from './components/SignUp';
+
+
 const App = () => {
-  return <h1>Hello React!!</h1>;
+  return (
+    <>
+      <SignUp />
+    </>
+  );
 };
 ReactDOM.render(<App />, document.getElementById('app'));
