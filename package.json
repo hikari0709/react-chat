@@ -8,6 +8,7 @@
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-react": "^7.17.12",
     "babel-loader": "^8.2.5",
+    "firebase-tools": "^11.0.1",
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
@@ -17,9 +18,22 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@fontsource/roboto": "^4.5.7",
+    "@mui/icons-material": "^5.8.2",
     "@mui/material": "^5.8.2",
     "firebase": "^9.8.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
