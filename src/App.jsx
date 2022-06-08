@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
 import SignIn from './components/SignIn';
 
 
 const App = () => {
+  const [name, setName] = useState('');
+  console.log({ name });
+
   return (
     <>
-      <SignIn />
+      <SignIn setName={setName}/>
     </>
   );
 };
