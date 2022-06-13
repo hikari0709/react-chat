@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import Main from './components/Main';
 import SignIn from './components/SignIn';
 import config from './config.json';
-console.log(config);
 
 const App = () => {
   const [name, setName] = useState('');
-  console.log({ name });
 
   if (config.signInEnabled && name === '') {
     return <SignIn setName={setName} />;
@@ -16,4 +14,7 @@ const App = () => {
     return <Main name={name} />;
   }
 };
-ReactDOM.render(<App />, document.getElementById('app'));
+
+const container = document.getElementById('app');
+const root = createRoot(container);
+root.render(<App />);
