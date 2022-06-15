@@ -3,14 +3,16 @@ import { TextField } from '@mui/material';
 
 import { pushMessage } from '../../firebaseConfig';
 
-const MessageField = ({ name, setText, text }) => {
+const MessageField = ({inputElement, name, setText, text }) => {
   return (
     <TextField
       id="standard-basic"
       variant="standard"
       fullWidth={true}
-      onChange={(e) => setText(e.target.value)}
+      inputRef={inputElement}
       value={text}
+      autoFocus
+      onChange={(e) => setText(e.target.value)}
     />
   );
 }
