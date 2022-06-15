@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getDatabase, ref, push, set } from "firebase/database";
+import { getDatabase, ref, push } from "firebase/database";
 
 const {
   REACT_APP_FIREBASE_APIKEY,
