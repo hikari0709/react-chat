@@ -1,8 +1,6 @@
 import React from 'react';
 import { TextField } from '@mui/material';
 
-import { pushMessage } from '../../firebaseConfig';
-
 const MessageField = ({inputElement, name, setText, text }) => {
   return (
     <TextField

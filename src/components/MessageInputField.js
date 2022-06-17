@@ -4,8 +4,6 @@ import { Grid, Avatar } from '@mui/material';
 import MessageField from './MessageField';
 import MessageSubmitButton from './MessageSubmitButton';
 
-//import { gravatarPath } from '../gravatar';
-
 const useStyles = makeStyles({
   root: {
     gridRow: 2,
@@ -17,7 +15,6 @@ const MessageInputField = ({ name }) => {
   const inputElement = useRef(null);
   const [text, setText] = useState('');
   const classes = useStyles();
-  //const avatarPath = gravatarPath('tanimoto0709@gmail.com');
 
   return (
     <div className={classes.root}>
